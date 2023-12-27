@@ -1,0 +1,150 @@
+.page.item{
+    background: #fff;
+    min-height: 100vh;
+    .main{
+    width: 1200px;
+    margin: 0 auto ;
+    position: relative;
+    padding-left: 600px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    .image-display{
+        width: 560px;
+        height: 660px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .pic{
+            width: 560px;
+            height: 560px;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+        }
+        .thumb{
+           margin-top: 20px;
+           div.img{
+               box-sizing: border-box;
+               width: 80px;
+               height: 80px;
+               border: solid 1px #ddd;
+               display: inline-block;
+               margin: 0 5px;
+               cursor: pointer; 
+               &.active{
+                   border-color: #f30;
+               }
+               img{
+                   display: block;
+                   object-fit: cover;
+                   max-width: 100%;
+                   max-height: 100%;
+               }
+           }
+            }
+        }
+
+        .info{
+            padding-top:39px ;
+            .title{
+                color:#333;
+                font-size: 28px;
+                line-height: 40px;
+            }
+            .sub-title{
+                color:#666;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+            .pric-box{
+                margin-top: 30px;
+                height: 80px;
+                background-image: linear-gradient(1.5708rad, rgb(255, 13, 64), rgb(255, 145, 168));
+                border-radius: 10px;
+                padding-left: 20px;
+                padding-top:10px ;
+                .tip{
+                    background:rgba(255,255,255,0.5);
+                    color:#fff;
+                    display: inline-block;
+                    font-size: 14px;
+                    padding: 3px 10px;
+                }
+                .price , .origin-price{
+                    display: inline-block;
+                    margin-right: 10px;
+                    color:#fff;
+                }
+                .price{
+                    font-size: 30px;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+                .origin-price{
+                    font-size: 16px;
+                    text-decoration: line-through;
+                    span{
+                        font-size:20px ;
+                        margin-top: 30px;
+                    }
+                }
+                
+            }
+            .sku-box{
+                .title{
+                    font-size: 16px;
+                }
+                .sku-list{
+                    overflow: hidden;
+                    .sku{
+                        width: 260px;
+                        height: 56px;
+                        line-height:56px ;
+                        border: solid 1px #ddd;
+                        text-align: center;
+                        display: inline-block;
+                        border-radius: 10px;
+                        margin-right: 20px;
+                        margin-top: 15px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        &.active{
+                            color:#f30;
+                            border-color:#f30 ;
+                        }
+                    }
+                }
+            }
+            .op{
+                margin-top: 50px;
+                    div{
+                        display: inline-block;
+                        width: 220px;
+                        text-align: center;
+                        font-size: 22px;
+                        height: 50px;
+                        line-height: 52px;
+                        color: #fff;
+                        border-radius: 56px;
+                        margin-left: 35px;
+                    }
+                    .add-cart{
+                        background: linear-gradient(1.5708rad, rgb(255, 168, 72), rgb(255, 144, 77));
+                    }
+                    .buy{
+                        background: linear-gradient(1.5708rad, rgb(254, 89, 69), rgb(214, 26, 25));
+                    }
+                }
+        }
+    }
+    .detail{
+        border-top: solid 10px #eee ;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
