@@ -1,0 +1,37 @@
+.navigation{
+    height: 60px;
+    .wrap{
+       position: fixed;
+       height: 60px;
+       z-index: 100;
+       bottom: 0;
+       width: 100vw;
+       left: 0;
+       background: #f7f7f7;
+       border-top: solid 1px #ccc;
+    }
+   
+    .nav{
+        width: 25vw;
+        display: inline-block;
+        text-align: center;
+        padding-top: 10px;
+        color: #333;
+        text-decoration: none;
+        .icon{
+        font-size: 20px;
+        margin-bottom: 5px;
+        }
+        span{
+            display: block;
+            font-size: 11px;
+        }
+        &:hover{
+            color: #f30;
+        }
+        &.active{
+            background: #f30;
+            color: #fff;
+        }
+    }
+}

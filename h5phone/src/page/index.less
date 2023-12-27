@@ -1,0 +1,94 @@
+.page.index{
+    min-height: 100vh;
+    background: #f7f7f7;
+    .slider{
+        .carousel{
+            .img{
+               width: 100vw;
+               height: 55vw;
+               background-position: center center;
+               background-size: cover;
+            }
+            .slick-dots {
+                button{
+                    background-color:rgba(0 , 0 , 0 , 0.7);
+                }
+            }
+            .slick-active button{
+                background: #f30;
+            }
+        }
+    }
+    .module{
+        margin-top:10px ;
+        >.title{
+            font-size: 22px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            span{
+                display: inline-block;
+                padding: 0 20px;
+                background: #f7f7f7;
+                position: relative;
+                z-index: 10px;
+            }
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                height: 1px;
+                top: 25px;
+                left: 20vw;
+                width: 60vw;
+                background: #ccc;
+            }
+        }
+        .items{
+            overflow: hidden;
+        }
+        .item{
+            width: 45vw;
+            background: #fff;
+            margin-left: 3.33vw;
+            height: calc( 45vw + 100px);
+            margin-bottom: 20px;
+            float: left;
+            color: #333;
+            text-decoration:none ;
+            img{
+                display: block;
+                width: 45vw;
+                height: 45vw;
+                object-fit: cover;
+            }
+            .title{
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                height: 48px;
+                overflow: hidden;
+                margin-top: 6px;
+            }
+            .price-box{
+                text-align: center;
+                margin-top: 3px;
+                div{
+                    display: inline-block;
+                }
+                .price{
+                    font-size: 16px;
+                    color: #f30;
+                    span{
+                        font-size: 22px;
+                    }
+                }
+                .origin-price{
+                    font-size: 13px;
+                    text-decoration:line-through ;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
